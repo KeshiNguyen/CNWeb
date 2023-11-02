@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tạo QR Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tạo QR Code</h1>
+    <form method="post" action="W5-EX-PR-02.php">
+        <label for="name">Họ tên:</label>
+        <input type="text" name="name" id="name" placeholder="enter your name" required><br>
+        <label for="mssv">MSSV:</label>
+        <input type="text" name="mssv" id="mssv" placeholder="enter your MSSV" required><br>
+        <label for="vaccine">Số mũi vaccine COVID:</label>
+        <input type="text" name="vaccine" id="vaccine" placeholder="enter number of vaccine" required><br>
+        <input type="submit" value="Tạo QR Code">
+    </form>
+</body>
+</html>

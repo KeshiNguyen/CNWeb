@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<headr>
+    <title> facebook </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+        }
+        
+        input {
+            height: 32px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            font-weight: 600;
+            font-size: 50px;
+            color: #1a76f2;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #000;
+            text-align: center;
+            margin-top: -1px;
+        }
+        
+        p.cont {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+            margin-top: -15px;
+        }
+        
+        .form {
+            background-color: #fff;
+            min-width: 200px;
+            max-width: 350px;
+            padding: 10px;
+            margin: auto;
+            margin-top: -20px;
+            border-radius: 5px;
+        }
+        
+        #fname {
+            width: 55%;
+        }
+        
+        #lname {
+            width: 39%;
+        }
+        
+        #contact {
+            width: 95%;
+        }
+        
+        #password {
+            width: 95%;
+        }
+        
+        p.pdob {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #888888;
+            text-align: left;
+            margin-top: -5px;
+        }
+        
+        .para {
+            font-size: 10px;
+            text-align: left;
+            line-height: 1;
+        }
+        
+        .para>p {
+            margin: 4px;
+        }
+        
+        #btn {
+            height: 32px;
+            width: 200px;
+            background-color: rgb(56, 221, 56);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .btnwrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gender {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .gender>div {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+    <body>
+        <div style="display: flex;">
+            <div style="margin-left: auto; padding: 0 32px;">
+                <h1> facebook </h1>
+                <div class="form">
+                    <h2> Create a new account </h2>
+                    <p class="cont"> It's quick and easy </p>
+                    <hr>
+                    </hr>
+                    <div>
+                        <form action="#">
+                            <input type="text" id="fname" name="fname" placeholder="First name">
+                            <input type="text" id="lname" name="lname" placeholder="Surname"><br><br>
+                            <input type="text" id="contact" name="contact" placeholder="Mobile number or email address"><br><br>
+                            <input type="password" id="password" name="password" placeholder="New password"><br><br>
+                            <p class="pdob"> Date of birth </p>
+                            <input type="date" id="dob"><br><br>
+                            <p class="pdob"> Gender </p>
+                            <div class="gender">
+                                <div>
+                                    <input name="gender" type="radio" value="Female" />Female
+                                </div>
+                                <div>
+                                    <input name="gender" type="radio" value="Male" />Male
+                                </div>
+                                <div>
+                                    <input name="gender" type="radio" value="Custom" />Custom
+                                </div>
+
+                            </div>
+
+                            </select>
+                            <!-- <select id="gender" name="gender"> 
+                              <option value="male"> </option>
+                            </select> -->
+                            <br>
+                            <div class="para">
+                                <div>
+                                    People who use our service may have uploaded you contact information to Facebook.
+                                    <a href="#">Learn more.</a>
+                                </div>
+                                <br>
+                                <div>
+                                    By clicking Sign Up, you agree to our
+                                    <a href="#">Terms, Privacy Policy</a> and
+                                    <a href="#">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="btnwrap">
+                                <input id="btn" type="submit" value="Sign Up"><br>
+                                <a href="#">Already have an account?</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <script>
+            $(document).ready(function() {
+                const year = new Date().getFullYear()
+                list = ''
+                const yearElement = $("#dob_year")
+                for (let i = year - 20; i < year + 20; i++) {
+                    console.log(i);
+                    list += `<option value=${i}>${i}</option>`
+                }
+                console.log(list);
+                $("#dob_year").append(list)
+
+
+            });
+        </script> -->
+    </body>

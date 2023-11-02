@@ -1,0 +1,202 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            height: 800px;
+        }
+        body {
+            background-color:#f0f2f5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img.png" alt="">
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <style>
+        html * {
+            padding: 0;
+            margin: 0;
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .logo img {
+            width: 250px;
+        }
+        body {
+            background-color:#f0f2f5;
+        }
+        .box {
+            width: 400px;
+            background-color: white;
+            padding: 16px;
+        }
+        .name, .email, .newpass {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 11px;
+
+        }
+        .box-header {
+            text-align: center;
+            padding: 0 0 10px 0;
+        }
+        .box-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .input {
+            margin: 0;
+            height: 18px;
+            width: 170px;
+            padding: 11px;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            background-color: #f5f6f7;
+            font-size: 15px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        .email .input, .newpass .input {
+            width: 100%;
+        }
+        hr {
+            margin-bottom: 16px;
+        }
+        .date-of-birth {
+            padding-bottom: 11px;
+        }
+        .gender {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .gender-choice {
+            margin: 0;
+            height: 18px;
+            padding: 11px;
+            border: 1px solid #ccd0d5;
+            width: 100px;
+            border-radius: 5px;
+
+        }
+        #birthdaytime {
+            margin: 0;
+            height: 18px;
+            width: 378px;
+            padding: 11px;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            height: 56px;
+            align-items: center;
+        }
+        .btn button {
+            width: 194px;
+            height: 36px;
+            background-color: #00a400;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        h4 {
+            color: #606770;
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+        }
+        h1 {
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            color: #1c1e21;
+        }
+        p {
+            color: #606770;
+        }
+        .have-an-account {
+            display: flex;
+            justify-content: center;
+        }
+        .have-an-account h3 {
+            color: #1877f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/yI/r/4aAhOWlwaXf.svg" alt="logo">
+    
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-header">
+                <h1>Create a new account</h1>
+                <h4>It's quick and easy.</h4>
+            </div>
+            <hr>
+            <div class="input-container">
+                <div class="name">
+                    <div class="input-name">
+                        <input type="text" class="input" placeholder="First name" id="">
+                    </div>
+                    <div class="input-name">
+                        <input type="Password" class="input" placeholder="Surname" id="">
+                    </div>
+                </div>
+            
+                <div class="email">
+                    <input type="Tel or Email" class="input" placeholder="Mobile number or email address" id="">
+                </div>
+                <div class="newpass">
+                    <input type="password" class="input" placeholder="New password" id="">
+                </div>
+                <p style="padding-bottom: 2px;">Date of birth ?</p>
+                <div class="date-of-birth">
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </div>
+                <p style="padding-bottom: 2px;">Gender ?</p>
+                <div class="gender">
+                    <div class="gender-choice">
+                        <label for="vehicle2"> Female <input type="radio"></label>
+                    </div>
+                    <div class="gender-choice">
+                        <label for="vehicle2"> Male <input type="radio"></label>
+                    </div>
+                    <div class="gender-choice">
+                        <label for="vehicle2"> Custom <input type="radio"></label>
+                    </div>
+                </div> 
+                <p style="margin: 11px 0; font-size: 12px; color: #777;">People who use our service may have uploaded your contact information to Facebook. <a href="">Learn more.</a></p>
+                <p style="margin: 11px 0; font-size: 12px; color: #777;">By clicking Sign Up, you agree to our <a href="">Terms</a>, <a href="">Privacy Policy</a> and <a href="">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                <div class="btn">
+                    <button type="button"><b>Sign Up</b></button>
+                </div>
+                <div class="have-an-account">
+                    <h3>Already have an account?</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

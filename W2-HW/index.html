@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Gmail</a>
+            </li>
+            <li>
+                <a href="#">Image</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/menu.png" id="menu" alt="google-apps">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button id="sign-in-btn">
+                        Sign in
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="logo" >
+        <img src="./img/logo.png" alt="google-logo">
+    </div>
+    <form id="s-form">
+        <img src="./img/search.svg" id="search-icon" >
+        <input type="text" id="txtsrch" >
+        <img src="./img/mic.png" id="micro-icon">
+        <img src="./img/camera.png" id="camera-icon">
+        <div class="btn">
+            <input type="submit" value="Google Search"  id="s-btn">
+            <input type="submit" value="I'm feeling lucky"  id="f-btn">
+        </div>
+    </form>
+    <div class="lang">
+        Google offered in:
+       <div class="list-lang">
+            <a href="">Tieng Viet</a>
+            <a href="">English</a>
+            <a href="">繁體中文</a>
+       </div>
+    </div>
+    <footer>
+        <h3>Viet Nam</h3>
+        <div class="links">
+            <div class="link-1">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="link-2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let srch = document.getElementById('s-form');
+        let srch_icon=document.getElementById('search-icon')
+        srch.onsubmit = search;
+        srch_icon.onclick = search;
+        function search(e){
+            window.location = 'https://www.google.com/search?q='+ document.getElementById('txtsrch').value;
+            return false;
+        }
+    </script>
+</body>
+</html>
